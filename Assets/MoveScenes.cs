@@ -13,7 +13,7 @@ public class MoveScenes : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             SceneManager.LoadScene("Scenes/Scene2");
-            Console.WriteLine("HOIIII");
+         
         }
     }
 

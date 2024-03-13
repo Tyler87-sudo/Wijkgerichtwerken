@@ -1,5 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
+using TreeEditor;
+using Unity.Mathematics;
 using UnityEngine;
 
     public class PlayerMovement : MonoBehaviour
@@ -10,21 +14,37 @@ using UnityEngine;
         [SerializeField]
         private float rotationSpeed;
 
-        void Update()
+        protected Rigidbody2D rb;
+        protected Collider2D col;
+        private Animator animator;
+
+        void Start()
         {
-            float horizontalInput = Input.GetAxis("Horizontal");
-            float verticalInput = Input.GetAxis("Vertical");
+            rb = gameObject.GetComponent<Rigidbody2D>();
+            animator = gameObject.GetComponent<Animator>();
+        }
+
+        void Update() {
+            
+            float horizontalInput = Input.GetAxisRaw("Horizontal");
+            float verticalInput = Input.GetAxisRaw("Vertical");
+            
+            animator.SetInteger("MovementInput", Convert.ToInt32(horizontalInput));
+            
+            if (horizontalInput > 0)
+            {
+                transform.rotation = Quaternion.Euler(0, 180, 0);
+            } else if (horizontalInput < 0)
+            {
+                transform.rotation = Quaternion.Euler(0, 0, 0);
+            }
 
             Vector2 movementDirection = new Vector2(horizontalInput, verticalInput);
             float inputMagnitude = Mathf.Clamp01(movementDirection.magnitude);
             movementDirection.Normalize();
 
             transform.Translate(movementDirection * speed * inputMagnitude * Time.deltaTime, Space.World);
-
-            if (movementDirection != Vector2.zero)
-            {
-                Quaternion toRotation = Quaternion.LookRotation(Vector3.forward, movementDirection);
-                transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
-            }
+            
         }
+        
     }

@@ -82,7 +82,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -96,7 +96,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -117,10 +117,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 16384
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -179,32 +179,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: player_4
-      rect:
-        serializedVersion: 2
-        x: 19
-        y: 128
-        width: 41
-        height: 61
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 37b19919581cd5810800000000000000
-      internalID: 1755772209161902963
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: player_5
       rect:
         serializedVersion: 2
         x: 83
-        y: 128
+        y: 127
         width: 41
         height: 61
       alignment: 0
@@ -221,43 +200,64 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_6
+      name: player_0
       rect:
         serializedVersion: 2
-        x: 147
-        y: 128
-        width: 41
-        height: 61
+        x: 13
+        y: 131
+        width: 44
+        height: 62
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 19b8024cb3499e3e0800000000000000
-      internalID: -2023923573111878767
+      spriteID: b878df84e10bf2643ac68f51c19de645
+      internalID: -383895430
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_7
+      name: player_1
       rect:
         serializedVersion: 2
-        x: 211
-        y: 128
-        width: 41
-        height: 61
+        x: 141
+        y: 125
+        width: 46
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: dd151cab0b33088f0800000000000000
-      internalID: -540375121143967267
+      spriteID: ec3acc52e8394e84fbd051fbed5dd802
+      internalID: 1138556325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_2
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 124
+        width: 47
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 230cb24efd0d6a74386a274cc8129315
+      internalID: 1358852262
       vertices: []
       indices: 
       edges: []
@@ -273,6 +273,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      player_0: -383895430
+      player_1: 1138556325
+      player_2: 1358852262
       player_4: 1755772209161902963
       player_5: 5865078278364869351
       player_6: -2023923573111878767
