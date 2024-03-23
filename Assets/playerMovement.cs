@@ -30,6 +30,7 @@ using UnityEngine;
             float verticalInput = Input.GetAxisRaw("Vertical");
             
             animator.SetInteger("MovementInput", Convert.ToInt32(horizontalInput));
+            animator.SetInteger("VerticalUp", Convert.ToInt32(verticalInput) + 2);
             
             if (horizontalInput > 0)
             {

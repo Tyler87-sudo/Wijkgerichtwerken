@@ -25,6 +25,5 @@ public class MoveScenes : MonoBehaviour
     {
 	    Scene scene = SceneManager.GetActiveScene();
 	    Console.WriteLine(scene.name);
-
     }
 }
