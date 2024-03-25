@@ -24,13 +24,14 @@ using UnityEngine;
             animator = gameObject.GetComponent<Animator>();
         }
 
-        void Update() {
+        void Update()
+        {
+
+            Move();
+            Animate();
             
             float horizontalInput = Input.GetAxisRaw("Horizontal");
             float verticalInput = Input.GetAxisRaw("Vertical");
-            
-            animator.SetInteger("MovementInput", Convert.ToInt32(horizontalInput));
-            animator.SetInteger("VerticalUp", Convert.ToInt32(verticalInput) + 2);
             
             if (horizontalInput > 0)
             {
@@ -43,9 +44,23 @@ using UnityEngine;
             Vector2 movementDirection = new Vector2(horizontalInput, verticalInput);
             float inputMagnitude = Mathf.Clamp01(movementDirection.magnitude);
             movementDirection.Normalize();
+            
 
             transform.Translate(movementDirection * speed * inputMagnitude * Time.deltaTime, Space.World);
             
+        }
+
+        private void Move()
+        {
+            
+        }
+
+        private void Animate()
+        {
+            float horizontalInput = Input.GetAxisRaw("Horizontal");
+            float verticalInput = Input.GetAxisRaw("Vertical");
+            animator.SetFloat("MovementX", horizontalInput);
+            animator.SetFloat("MovementY", verticalInput);
         }
         
     }
