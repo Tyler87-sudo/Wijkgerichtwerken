@@ -6,10 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/Scene1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/Secundo.unity
+    path: Assets/Scenes/Scene2.unity
     guid: 06b2cc544e1c4bf4189ee1a71151aba9
-  m_configObjects: {}
+  - enabled: 1
+    path: Assets/Scenes/Minigae.unity
+    guid: 1579313a1fe1bff48af2fb129b6dfee6
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: f904885bdbdcb664a915abdb753ac9d6
+  m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: f1295c7d07f874f4e8b3e303d7039886, type: 2}
   m_UseUCBPForAssetBundles: 0
