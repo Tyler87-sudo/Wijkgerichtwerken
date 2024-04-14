@@ -548,7 +548,24 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      eenzame man_0: 2305505453712680995
+      eenzame man_1: -3714899999428786784
+      eenzame man_10: -408159509491868843
+      eenzame man_11: -7642008604397587314
+      eenzame man_12: 6410837651933327232
+      eenzame man_13: -2249034752938491427
+      eenzame man_14: -3503375791478489830
+      eenzame man_15: 4628917190602037752
+      eenzame man_16: 1938890544716698481
+      eenzame man_2: -6156501729337238084
+      eenzame man_3: -8215826557364970974
+      eenzame man_4: 3740288522986720085
+      eenzame man_5: -3720796851287161842
+      eenzame man_6: 7015446211820177437
+      eenzame man_7: -4187462668618796301
+      eenzame man_8: -6256272566750874193
+      eenzame man_9: 2918889591364989671
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

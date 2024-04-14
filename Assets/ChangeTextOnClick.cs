@@ -14,28 +14,21 @@ public class ChangeTextOnClick : MonoBehaviour
 
 	[SerializeField] public TextMeshProUGUI NPC_Text;
 	[SerializeField] private GameObject canvas;
-	
+
 	public void MouseClick()
 	{
-		if (Input.GetMouseButton(0))
-		{
-			Debug.Log(currentArrayValue);
-			if (currentArrayValue <= 3)
-			{
-				Debug.Log("The left mouse button is being held down.");
-				currentArrayValue++;
-				NPC_Text.text = NPC_Text_Array[currentArrayValue];
-			}
-		}
 		if (Input.GetMouseButton(1))
 		{
 			Debug.Log(currentArrayValue);
-			if (currentArrayValue >= 0)
-			{
-				Debug.Log("The right mouse button is being held down.");
-				currentArrayValue--;
-				NPC_Text.text = NPC_Text_Array[currentArrayValue];
-			}
+			Debug.Log("The right mouse button is being held down.");
+			currentArrayValue--;
+			NPC_Text.text = NPC_Text_Array[currentArrayValue];
+		}
+		
+		if (Input.GetMouseButton(0))
+		{
+			currentArrayValue++;
+			NPC_Text.text = NPC_Text_Array[currentArrayValue];
 		}
 	}
 
