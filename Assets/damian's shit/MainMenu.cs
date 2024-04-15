@@ -6,7 +6,7 @@ public class MainMenu : MonoBehaviour
     public void StartGame()
     {
         // ASSIGN DE FUCKING SCENE !!!
-        SceneManager.LoadScene("");
+        SceneManager.LoadScene("Scenes/Scene1");
     }
 
     public void QuitGame()
