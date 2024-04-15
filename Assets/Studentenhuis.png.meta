@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 235b1df6539389042b859cbde2492174
+guid: b8b2f40296c55e44a84642a8c37c9f3a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5534716432263066409
-    second: main character_0
+      213: 7108265190935112053
+    second: Studentenhuis_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -134,13 +134,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: main character_0
+      name: Studentenhuis_0
       rect:
         serializedVersion: 2
-        x: 3062
-        y: 1088
-        width: 5899
-        height: 10918
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -148,8 +148,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7dc4172aabcb033b0800000000000000
-      internalID: -5534716432263066409
+      spriteID: 57926faa781a5a260800000000000000
+      internalID: 7108265190935112053
       vertices: []
       indices: 
       edges: []
@@ -164,8 +164,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      main character_0: -5534716432263066409
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

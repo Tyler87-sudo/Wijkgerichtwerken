@@ -428,7 +428,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      exclamation_spritesheet_01_0: -7725732495233608707
+      exclamation_spritesheet_01_1: -1464368072779997507
+      exclamation_spritesheet_01_10: 5078447304886662593
+      exclamation_spritesheet_01_11: -1730008304229712275
+      exclamation_spritesheet_01_2: -1688387179385125467
+      exclamation_spritesheet_01_3: 8124480408282556834
+      exclamation_spritesheet_01_4: 1829384938612222470
+      exclamation_spritesheet_01_5: 3197663247068648112
+      exclamation_spritesheet_01_6: -5604521245898667346
+      exclamation_spritesheet_01_7: -5951895514691116306
+      exclamation_spritesheet_01_8: 1969851451903097457
+      exclamation_spritesheet_01_9: 2161415472828059405
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
