@@ -21,8 +21,6 @@ public class GenerateOption1 : MonoBehaviour
         {
             if (eventData.button == PointerEventData.InputButton.Left && currentArrayValue >= 4)
             {
-                button1.gameObject.SetActive(true);
-                button2.gameObject.SetActive(true);
             }
             if (eventData.button == PointerEventData.InputButton.Left)
             {

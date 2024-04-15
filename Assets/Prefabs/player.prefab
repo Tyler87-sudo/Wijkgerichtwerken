@@ -9,11 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8253505381486145219}
-  - component: {fileID: 6238533924402135083}
-  - component: {fileID: 3686112871189721905}
-  - component: {fileID: 3086849504742624236}
-  - component: {fileID: 274289464000714787}
   - component: {fileID: 7793148834917444816}
+  - component: {fileID: 1493715674999429679}
+  - component: {fileID: 8566704844381479157}
+  - component: {fileID: 4001216636855383035}
   m_Layer: 0
   m_Name: player
   m_TagString: Player
@@ -37,7 +36,21 @@ Transform:
   - {fileID: 2479029406972331756}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &6238533924402135083
+--- !u!114 &7793148834917444816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126127925225974695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b1f38c6bf1f37449b12003359a34380, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 8
+  rotationSpeed: 0
+--- !u!212 &1493715674999429679
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -78,40 +91,18 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1358852262, guid: 0c3befe5dfcb04840bff42fbbeea9f31, type: 3}
+  m_Sprite: {fileID: -5534716432263066409, guid: 235b1df6539389042b859cbde2492174, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.46875, y: 2.15625}
+  m_Size: {x: 58.989998, y: 109.1866}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &3686112871189721905
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1126127925225974695}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b03152318392d874086a19c43ad45115, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
---- !u!50 &3086849504742624236
+--- !u!50 &8566704844381479157
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -138,7 +129,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!61 &274289464000714787
+--- !u!61 &4001216636855383035
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -148,7 +139,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: 6f8734ec464c43a4d9b69b6c895f4e70, type: 2}
+  m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -172,32 +163,18 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.010526188, y: -0.0026055574}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.46875, y: 2.15625}
-    newSize: {x: 1.46875, y: 2.15625}
+    oldSize: {x: 58.989998, y: 109.1866}
+    newSize: {x: 58.989998, y: 109.1866}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.3610524, y: 0.6768991}
+  m_Size: {x: 58.989998, y: 109.1866}
   m_EdgeRadius: 0
---- !u!114 &7793148834917444816
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1126127925225974695}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b1f38c6bf1f37449b12003359a34380, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 8
-  rotationSpeed: 0
 --- !u!1 &2555817632645756628
 GameObject:
   m_ObjectHideFlags: 0

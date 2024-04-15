@@ -21,7 +21,6 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         Move();  
-        Animate(); 
     }
 
     private void Move()
@@ -49,8 +48,5 @@ public class PlayerMovement : MonoBehaviour
     {
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
-
-        animator.SetFloat("MovementX", horizontalInput);
-        animator.SetFloat("MovementY", verticalInput);
     }
 }
